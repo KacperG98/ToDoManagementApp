@@ -13,7 +13,7 @@ namespace Infrastricture
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddEntityFrameworkNpgsql();
-            services.AddDbContext<TaskContext>(opt =>
+            services.AddDbContext<DefaultContext>(opt =>
                     opt.UseNpgsql(configuration.GetConnectionString("TaskDatabase"))
                 );
 

@@ -3,9 +3,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastricture.Contexts.Interfaces
 {
-    interface ITaskContext
+    interface IDefaultContext
     {
-        DbSet<TaskTicket> Tasks { get; }
-
+        DbSet<Ticket> Tasks { get; }
     }
 }
