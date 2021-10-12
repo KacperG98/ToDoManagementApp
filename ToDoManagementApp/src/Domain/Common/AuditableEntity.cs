@@ -15,6 +15,5 @@ namespace Domain.Common
         public string CreatedBy { get; set; }
         public string ModifiedBy { get; set; }
         public string DisactiveBy { get; set; }
-        public EntityState State { get; set; }
     }
 }
