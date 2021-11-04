@@ -13,6 +13,8 @@ namespace Domain.Models
         public string Password { get; set; }
         public AppRole Role { get; set; }
 
+        public int OrganizationId { get; set; }
+        public Organization Organization { get; set; }
         public ICollection<Ticket> Tasks { get; set; }
     }
 }

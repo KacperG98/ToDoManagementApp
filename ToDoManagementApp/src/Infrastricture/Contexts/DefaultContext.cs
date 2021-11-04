@@ -13,6 +13,7 @@ namespace Infrastricture.Contexts
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Ticket> Tasks { get; init; }
+        public DbSet<Organization> Organizations { get; init; }
         public DefaultContext(DbContextOptions<DefaultContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
