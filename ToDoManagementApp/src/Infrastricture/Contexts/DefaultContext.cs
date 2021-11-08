@@ -17,7 +17,7 @@ namespace Infrastricture.Contexts
         public DefaultContext(DbContextOptions<DefaultContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.Entity<User>().OwnsOne(p => p.UserName);
         }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
